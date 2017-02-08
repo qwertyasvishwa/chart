@@ -48,6 +48,7 @@ class ViewController: UIViewController {
     func setChart(dataPoints: [String], values: [Double]) {
         barView.noDataText = "You need to provide data for the chart."
         
+        barView.descriptionText = "My First bar Graph in Swift"
         var dataEntries: [BarChartDataEntry] = []
         for i in 0..<dataPoints.count {
             let dataEntry = BarChartDataEntry(x: Double(i), y:values[i])
